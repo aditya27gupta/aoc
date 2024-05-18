@@ -8,7 +8,7 @@ class Solver:
             splitted = instruct.split()
             self.instructions[splitted[-1]] = splitted[:-1]
 
-    def solve(self, target: str) -> None:
+    def solve(self, target: str) -> int:
         if target in self.variables:
             return self.variables[target]
 
